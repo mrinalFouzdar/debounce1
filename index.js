@@ -29,3 +29,9 @@ const data =(arguments)=>{
     console.log(`${arguments}`)
 }
 debounce(data,3000)("ram")
+
+
+let button= document.getElementById("button")
+button.addEventListener("click",debounce(function(){
+  alert("executed one every 2 second!")
+},2000))
